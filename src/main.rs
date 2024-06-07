@@ -1,7 +1,9 @@
 mod client;
+mod cmd;
 mod config;
 mod handler;
 mod intents;
+mod utils;
 
 use anyhow::Result;
 use client::build_client;
