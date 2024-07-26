@@ -10,6 +10,13 @@ use crate::CONFIG;
 
 pub struct Handler;
 
+impl Handler {
+    /// Create a new Handler instance.
+    pub fn new() -> Self {
+        Handler
+    }
+}
+
 #[async_trait]
 impl EventHandler for Handler {
     async fn message(&self, ctx: Context, msg: Message) {
