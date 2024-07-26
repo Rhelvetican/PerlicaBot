@@ -13,13 +13,13 @@ pub fn get_token() -> Result<String> {
 pub struct Config {
     #[serde(rename = "cmdPrefix")]
     #[serde(default)]
-    cmd_prefix: String,
+    pub cmd_prefix: String,
 }
 
 impl Default for Config {
     fn default() -> Self {
         Self {
-            cmd_prefix: "!".to_string(),
+            cmd_prefix: String::from("!"),
         }
     }
 }
